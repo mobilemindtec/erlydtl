@@ -39,7 +39,7 @@ case application:get_key(syntax_tools, vsn) of
 
         Merge([{deps, Deps},
                {pre_hooks, PreHooks},
-               {erl_opts, [{d, 'MERL_DEP'}]}]);
+               {erl_opts, [{d, 'MERL_DEP', tuple_calls}]}]);
     _ ->
         Merge([])
 end.
